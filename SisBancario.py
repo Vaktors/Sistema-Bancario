@@ -22,7 +22,7 @@ while True:
             valor = input('Digite o valor do depósito ou "q" para sair: ')
             if valor == 'q':
                 break
-            if float(valor.replace(',', '.'))<0: # Checagem de valor negativo
+            elif float(valor.replace(',', '.'))<0: # Checagem de valor negativo
                 print('Valor inválido! Por favor digite um valor positivo.')
             else: 
                 saldo += float(valor.replace(',', '.'))
